@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://cdpn.io/osayiosas/fullpage/PowvxPR -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<title>CodePen - A Pen by  osaigbovo idiaghe</title>
+<style>
+.wrap{
+position:relative;
+top:50px;
+left:70px;
+background:black;
+margin-right:110px;
+border-radius:7px;
+}
+input[type=text]{
+height:30px;
+border:2px solid #f3f3f3;
+border-radius:7px;
+color:red;
+width:fixed;
+font-size:15px;
+position:relative;
+top:10px;
+left:7px;
+}
+input[type=button]{
+font-size:20px;
+position:relative;
+left:18px;
+width:20%;
+height:30px;
+}
+#del{
+position:relative;
+right:30px;
+width:85%;
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+
+
+
+<div class="wrap">
+<form name="calc">
+<input type="text" name="display" readonly="">
+<br><br>
+<input type="button" value="9" onclick="calc.display.value+=&#39;9&#39; ">
+<input type="button" value="8" onclick="calc.display.value+=&#39;8&#39; ">
+<input type="button" value="7" onclick="calc.display.value+=&#39;7&#39; ">
+<input type="button" value="+" onclick="calc.display.value+=&#39;+&#39; ">
+<br><br>
+<input type="button" value="6" onclick="calc.display.value+=&#39;6&#39; ">
+<input type="button" value="5" onclick="calc.display.value+=&#39;5&#39; ">
+<input type="button" value="4" onclick="calc.display.value+=&#39;4&#39; ">
+<input type="button" value="-" onclick="calc.display.value+=&#39;-&#39; ">
+<br><br>
+<input type="button" value="3" onclick="calc.display.value+=&#39;3&#39; ">
+<input type="button" value="2" onclick="calc.display.value+=&#39;2&#39; ">
+<input type="button" value="1" onclick="calc.display.value+=&#39;1&#39; ">
+<input type="button" value="*" onclick="calc.display.value+=&#39;*&#39; ">
+<br><br>
+<input type="button" value="0" onclick="calc.display.value+=&#39;0&#39; ">
+<input type="button" value="%" onclick="calc.display.value+=&#39;%&#39; ">
+<input type="button" value="/" onclick="calc.display.value+=&#39;/&#39; ">
+<input type="button" value="=" onclick="calc.display.value=eval(calc.display.value) ">
+<br><br>
+<input type="button" value="DELETE" onclick="calc.display.value=&#39; &#39; " id="del">
+</form>
+</div>
+
+
+
+
+</body></html>
